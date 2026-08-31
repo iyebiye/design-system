@@ -10,6 +10,9 @@ importers:
 
   apps/docs:
     dependencies:
+      '@design-system/tokens':
+        specifier: workspace:*
+        version: link:../../packages/tokens
       '@design-system/ui':
         specifier: workspace:*
         version: link:../../packages/ui
