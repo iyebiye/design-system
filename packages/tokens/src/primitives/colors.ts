@@ -1,5 +1,5 @@
-export const colors = {
-  primary: {
+export const primitiveColors = {
+  blue: {
     50: "#eff6ff",
     100: "#dbeafe",
     200: "#bfdbfe",
@@ -10,9 +10,10 @@ export const colors = {
     700: "#1d4ed8",
     800: "#1e40af",
     900: "#1e3a8a",
+    950: "#172554",
   },
 
-  neutral: {
+  gray: {
     0: "#ffffff",
     50: "#f9fafb",
     100: "#f3f4f6",
@@ -27,17 +28,17 @@ export const colors = {
     950: "#030712",
   },
 
-  danger: {
+  red: {
     500: "#ef4444",
     600: "#dc2626",
   },
 
-  success: {
+  green: {
     500: "#22c55e",
     600: "#16a34a",
   },
 
-  warning: {
+  amber: {
     500: "#f59e0b",
     600: "#d97706",
   },

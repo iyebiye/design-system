@@ -15,6 +15,13 @@ export const typography = {
     "5xl": "48px",
   },
 
+  lineHeight: {
+    tight: 1.2,
+    snug: 1.3,
+    normal: 1.5,
+    relaxed: 1.6,
+  },
+
   fontWeight: {
     regular: 400,
     medium: 500,
