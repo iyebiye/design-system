@@ -1,81 +1,63 @@
 import { Button } from "@design-system/ui";
+import { DocsLayout } from "@/components/docs/docs-layout";
 
 export default function Home() {
   return (
-    <main style={{ padding: "64px" }}>
-      <h1>Design System</h1>
+    <DocsLayout>
+      <div>
+        <p
+          style={{
+            margin: 0,
+            color: "var(--ds-color-text-muted)",
+            fontSize: "14px",
+          }}
+        >
+          Design System
+        </p>
 
-      <section style={{ marginTop: "48px" }}>
-        <h2>Button</h2>
+        <h1
+          style={{
+            marginTop: "12px",
+            marginBottom: "16px",
+            fontSize: "48px",
+            lineHeight: 1.1,
+            letterSpacing: "-0.03em",
+          }}
+        >
+          Build better interfaces.
+        </h1>
+
+        <p
+          style={{
+            maxWidth: "600px",
+            margin: 0,
+            color: "var(--ds-color-text-secondary)",
+            fontSize: "18px",
+            lineHeight: 1.6,
+          }}
+        >
+          A flexible design system for designers and
+          developers. Use the components in Figma,
+          install them in your application, or copy
+          the source directly.
+        </p>
 
         <div
           style={{
             display: "flex",
-            gap: "16px",
-            alignItems: "center",
-            marginTop: "24px",
-            flexWrap: "wrap",
+            gap: "12px",
+            marginTop: "32px",
           }}
         >
-          <Button>Primary</Button>
+          <Button>
+            Explore components
+          </Button>
 
-          <Button variant="secondary">Secondary</Button>
-
-          <Button variant="ghost">Ghost</Button>
-
-          <Button variant="destructive">Destructive</Button>
+          <Button variant="secondary">
+            Get started
+          </Button>
         </div>
-
-        <div
-          style={{
-            display: "flex",
-            gap: "16px",
-            alignItems: "center",
-            marginTop: "24px",
-            flexWrap: "wrap",
-          }}
-        >
-          <Button size="sm">Small</Button>
-
-          <Button size="md">Medium</Button>
-
-          <Button size="lg">Large</Button>
-        </div>
-
-        <div
-          style={{
-            display: "flex",
-            gap: "16px",
-            alignItems: "center",
-            marginTop: "24px",
-            flexWrap: "wrap",
-          }}
-        >
-          <Button disabled>Disabled</Button>
-
-          <Button loading>Loading</Button>
-        </div>
-      </section>
-
-      <section style={{ marginTop: "48px" }}>
-        <h2>States</h2>
-
-        <div
-          style={{
-            display: "flex",
-            gap: "16px",
-            alignItems: "center",
-            marginTop: "24px",
-            flexWrap: "wrap",
-          }}
-        >
-          <Button>Default</Button>
-
-          <Button disabled>Disabled</Button>
-
-          <Button loading>Loading</Button>
-        </div>
-      </section>
-    </main>
+      </div>
+    </DocsLayout>
   );
 }
