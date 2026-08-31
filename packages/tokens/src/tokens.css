@@ -1,24 +1,4 @@
 :root {
-  /* Colors */
-  --ds-color-background-default: #ffffff;
-  --ds-color-background-subtle: #f9fafb;
-  --ds-color-background-surface: #f3f4f6;
-
-  --ds-color-text-primary: #111827;
-  --ds-color-text-secondary: #4b5563;
-  --ds-color-text-muted: #6b7280;
-  --ds-color-text-inverse: #ffffff;
-
-  --ds-color-border-default: #e5e7eb;
-  --ds-color-border-strong: #d1d5db;
-
-  --ds-color-action-primary: #2563eb;
-  --ds-color-action-primary-hover: #1d4ed8;
-
-  --ds-color-feedback-danger: #dc2626;
-  --ds-color-feedback-success: #16a34a;
-  --ds-color-feedback-warning: #d97706;
-
   /* Spacing */
   --ds-spacing-1: 4px;
   --ds-spacing-2: 8px;
