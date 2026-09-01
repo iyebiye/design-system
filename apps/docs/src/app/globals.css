@@ -212,7 +212,7 @@ body {
 }
 
 .component-preview-canvas {
-  min-height: 220px;
+  min-height: 240px;
 
   display: flex;
   align-items: center;
@@ -273,5 +273,118 @@ body {
 
 .component-copy-button:hover {
   background: var(--ds-color-background-surface);
+  color: var(--ds-color-text-primary);
+}
+
+.component-preview-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+
+  padding: 12px;
+
+  border-bottom: 1px solid var(--ds-color-border-default);
+
+  background: var(--ds-color-background-subtle);
+}
+
+.preview-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 12px;
+}
+
+.preview-control-label {
+  color: var(--ds-color-text-muted);
+}
+
+.preview-control select {
+  appearance: none;
+
+  min-width: 96px;
+
+  padding: 7px 28px 7px 10px;
+
+  border: 1px solid var(--ds-color-border-default);
+  border-radius: var(--ds-radius-sm);
+
+  background-color: var(--ds-color-background-default);
+  background-image: linear-gradient(45deg, transparent 50%, currentColor 50%),
+    linear-gradient(135deg, currentColor 50%, transparent 50%);
+  background-position:
+    calc(100% - 11px) 10px,
+    calc(100% - 7px) 10px;
+  background-size:
+    4px 4px,
+    4px 4px;
+  background-repeat: no-repeat;
+
+  color: var(--ds-color-text-primary);
+
+  font: inherit;
+  cursor: pointer;
+}
+
+.preview-control select:hover {
+  border-color: var(--ds-color-text-muted);
+}
+
+.preview-control select:focus-visible {
+  outline: 2px solid var(--ds-color-text-primary);
+  outline-offset: 1px;
+}
+
+.preview-toggle {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 7px 10px;
+
+  border: 1px solid transparent;
+  border-radius: var(--ds-radius-sm);
+
+  color: var(--ds-color-text-secondary);
+
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.preview-toggle:hover {
+  background: var(--ds-color-background-default);
+  border-color: var(--ds-color-border-default);
+}
+
+.preview-toggle input {
+  width: 14px;
+  height: 14px;
+  margin: 0;
+
+  accent-color: var(--ds-color-text-primary);
+
+  cursor: pointer;
+}
+
+.preview-reset-button {
+  margin-left: auto;
+
+  padding: 7px 10px;
+
+  border: 0;
+  border-radius: var(--ds-radius-sm);
+
+  background: transparent;
+
+  color: var(--ds-color-text-muted);
+
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.preview-reset-button:hover {
+  background: var(--ds-color-background-default);
   color: var(--ds-color-text-primary);
 }

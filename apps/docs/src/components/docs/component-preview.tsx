@@ -5,11 +5,13 @@ import { useState, type ReactNode } from "react";
 interface ComponentPreviewProps {
   children: ReactNode;
   code?: string;
+  controls?: ReactNode;
 }
 
 export function ComponentPreview({
   children,
   code,
+  controls,
 }: ComponentPreviewProps) {
   const [copied, setCopied] = useState(false);
 
@@ -27,6 +29,12 @@ export function ComponentPreview({
 
   return (
     <div className="component-preview">
+      {controls && (
+        <div className="component-preview-controls">
+          {controls}
+        </div>
+      )}
+
       <div className="component-preview-canvas">
         {children}
       </div>
