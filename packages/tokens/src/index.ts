@@ -8,5 +8,6 @@ export * from "./primitives/motion";
 export * from "./semantic/colors";
 export * from "./semantic/typography";
 export * from "./semantic/spacing";
+export * from "./semantic/button";
 
 export type { DesignSystemTheme } from "./theme";

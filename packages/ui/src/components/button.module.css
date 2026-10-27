@@ -51,40 +51,40 @@
 /* Variants */
 
 .primary {
-  background: var(--ds-color-action-primary);
-  color: var(--ds-color-text-inverse);
+  background: var(--ds-color-button-primary-background);
+  color: var(--ds-color-button-primary-text);
 }
 
 .primary:hover:not(:disabled) {
-  background: var(--ds-color-action-primary-hover);
+  background: var(--ds-color-button-primary-background-hover);
 }
 
 .secondary {
-  background: var(--ds-color-background-default);
-  color: var(--ds-color-text-primary);
+  background: var(--ds-color-button-secondary-background);
+  color: var(--ds-color-button-secondary-text);
   border-color: var(--ds-color-border-default);
 }
 
 .secondary:hover:not(:disabled) {
-  background: var(--ds-color-background-subtle);
+  background: var(--ds-color-button-secondary-background-hover);
 }
 
 .ghost {
-  background: transparent;
-  color: var(--ds-color-text-primary);
+  background: var(--ds-color-button-ghost-background);
+  color: var(--ds-color-button-ghost-text);
 }
 
 .ghost:hover:not(:disabled) {
-  background: var(--ds-color-background-subtle);
+  background: var(--ds-color-button-ghost-background-hover);
 }
 
 .destructive {
-  background: var(--ds-color-feedback-danger);
-  color: var(--ds-color-text-inverse);
+  background: var(--ds-color-button-destructive-background);
+  color: var(--ds-color-button-destructive-text);
 }
 
 .destructive:hover:not(:disabled) {
-  opacity: 0.9;
+  background: var(--ds-color-button-destructive-background-hover);
 }
 
 .spinner {

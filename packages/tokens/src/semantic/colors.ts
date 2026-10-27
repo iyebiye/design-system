@@ -20,8 +20,20 @@ export const semanticColors = {
   },
 
   action: {
-    primary: primitiveColors.blue[600],
-    primaryHover: primitiveColors.blue[700],
+    primary: primitiveColors.gray[950],
+    primaryHover: primitiveColors.gray[900],
+
+    secondary: primitiveColors.gray[100],
+    secondaryHover: primitiveColors.gray[200],
+
+    ghost: "transparent",
+    ghostHover: primitiveColors.gray[100],
+
+    destructive: primitiveColors.red[600],
+    destructiveHover: primitiveColors.red[500],
+
+    disabled: primitiveColors.gray[200],
+    disabledText: primitiveColors.gray[500],
   },
 
   feedback: {

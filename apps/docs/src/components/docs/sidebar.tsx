@@ -5,6 +5,12 @@ import { usePathname } from "next/navigation";
 
 const navigation = [
   {
+    title: "Documentation",
+    items: [
+      { label: "Get started", href: "/getting-started" },
+    ],
+  },
+  {
     title: "Foundations",
     items: [
       { label: "Colors", href: "/foundations/colors" },
@@ -16,6 +22,7 @@ const navigation = [
   {
     title: "Components",
     items: [
+      { label: "Overview", href: "/components" },
       { label: "Button", href: "/components/button" },
       { label: "Input", href: "/components/input" },
       { label: "Textarea", href: "/components/textarea" },
