@@ -1,3 +1,4 @@
+
 {
   "name": "docs",
   "version": "0.1.0",
@@ -9,8 +10,8 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@design-system/tokens": "workspace:*",
-    "@design-system/ui": "workspace:*",
+    "@design-system/tokens": "0.1.0",
+    "@design-system/ui": "0.1.0",
     "next": "16.3.3",
     "react": "19.2.8",
     "react-dom": "19.2.8"
@@ -25,6 +26,5 @@
     "eslint-config-next": "16.3.3",
     "tailwindcss": "^4",
     "typescript": "^5"
-  },
-  "packageManager": "pnpm@11.24.0"
+  }
 }

@@ -1,11 +1,14 @@
+
 {
   "name": "design-system",
-  "version": "0.1.0",
   "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "dev": "pnpm --filter docs dev",
-    "build": "pnpm -r build",
-    "lint": "pnpm -r lint"
-  },
-  "packageManager": "pnpm@11.24.0"
+    "dev": "npm run dev --workspace=apps/docs",
+    "build": "npm run build --workspace=apps/docs",
+    "lint": "npm run lint --workspaces --if-present"
+  }
 }
